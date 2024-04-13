@@ -1,0 +1,482 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1071,10793" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="668,10728" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="UIPATH_BVA_Simulation" Name="varEEGProjectFileName" />
+      <Variable x:TypeArguments="x:String" Default="*20100420JR0003*" Name="varEEGRawDataNodeName" />
+      <Variable x:TypeArguments="x:String" Default="D:\SJ\01-02-2024\BVA-history" Name="varEEGHistoryDir" />
+      <Variable x:TypeArguments="x:String" Default="C:\Vision\Analyzer2\Workfiles\Recommended_Artefact_Correction_Template_AllAverage_v0.2_JR4.ehtp" Name="varBVAHistoryTemplate" />
+      <Variable x:TypeArguments="x:String" Default="D:\SJ\01-02-2024\20100420_JR-with MRI - Copy\EEG\raw" Name="varEEGRawFileDir" />
+      <Variable x:TypeArguments="x:String" Name="varEEGExportDirectory" />
+      <Variable x:TypeArguments="x:String" Default="Chalfont" Name="varScanner" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="606,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[varEEGRawFileDir]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">D:\SJ\01-02-2024\20100420_JR-with MRI - Copy\EEG\raw</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="606,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[varEEGHistoryDir]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">D:\SJ\01-02-2024\BVA-history</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="606,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[varEEGProjectFileName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">UIPATH_BVA_Simulation</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="606,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[varBVAHistoryTemplate]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">C:\Vision\Analyzer2\Workfiles\Recommended_Artefact_Correction_Template_AllAverage_v0.2_JR4.ehtp</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="606,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[varEEGRawDataNodeName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">*20100420JR0003*</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="606,292" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please provide the Scanner Location (Chalfont/Non-Chalfont)" OptionsString="Chalfont" Title="Scanner Selection">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[varScanner]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <If Condition="[varScanner = &quot;Chalfont&quot;]" sap:VirtualizedContainerService.HintSize="606,9675" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="526,4563" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Analyzer 2.3" sap:VirtualizedContainerService.HintSize="484,4475" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bf8e555a-9263-430a-9277-01b5221d1438" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,4184" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="82, 43, 18, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="69, 38, 46, 24" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'File'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='File' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='File' role='page tab' automationid='' check:text='File' /&gt;" Guid="d9b3df9f-16e5-42ec-bb32-8e4347730506" InformativeScreenshot="7eea48e9cd91fca5f5ce1a3a6c3b55db.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmMain' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="14, 45, 23, 11" CvTextArgument="New" CvType="Text" DesignTimeRectangle="6, 5, 42, 66" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'New'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='Workspace' role='tool bar' /&gt;&lt;ctrl name='New' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='Workspace' role='tool bar' /&gt;&lt;ctrl name='New' role='push button' automationid='' check:text='New' /&gt;" Guid="c5ec5d58-d6de-4d1b-8f12-b6c38509c26d" InformativeScreenshot="cb3534838c639d4fe9bd91eef8cac99d.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='WindowsForms10.Window.*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Raw Files'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGRawFileDir]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="101, 61, 146, 21" CvType="InputBox" DesignTimeRectangle="101, 62, 145, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'D:\SJ\01-02-2024\201004…'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textRawFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textRawFiles' /&gt;" Guid="54a95564-c7ac-4ca9-bcb1-ec9d7a53261b" InformativeScreenshot="e47ec78d2ffaa46cfde4a40707f2093b.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="28, 65, 50, 12" CvTextArgument="Raw Files:" CvType="Text" DesignTimeRectangle="26, 65, 56, 13" ElementType="Text" FriendlyName="'Raw Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelRawFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelRawFiles' check:text='Raw Files:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'History Files'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGHistoryDir]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="101, 88, 147, 21" CvType="InputBox" DesignTimeRectangle="101, 88, 145, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'D:\SJ\01-02-2024\201509…'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textHistoryFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textHistoryFiles' /&gt;" Guid="6ee3ac24-c953-4e09-b031-41302e1acc8c" InformativeScreenshot="860e43490e7322165d9afa3c64104610.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="28, 91, 60, 14" CvTextArgument="History Files:" CvType="Text" DesignTimeRectangle="26, 91, 66, 13" ElementType="Text" FriendlyName="'History Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelHistoryFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelHistoryFiles' check:text='History Files:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Export Files'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGHistoryDir]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="101, 114, 146, 21" CvType="InputBox" DesignTimeRectangle="101, 114, 145, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Export Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textExportFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textExportFiles' /&gt;" Guid="979e765f-c612-4345-83be-be55d7862094" InformativeScreenshot="7e655cbfe76ecd6373527122fc509384.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="28, 117, 58, 14" CvTextArgument="Export Files:" CvType="Text" DesignTimeRectangle="26, 117, 64, 13" ElementType="Text" FriendlyName="'Export Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelExportFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelExportFiles' check:text='Export Files:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="178, 166, 73, 21" CvTextArea="204, 170, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="177, 165, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlname='buttonOK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='buttonOK' check:text='OK' /&gt;" Guid="d755f8bc-4ce0-44af-b036-403ff7ef1203" InformativeScreenshot="1316915a130ff470ac5a7f360ad7d388.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGProjectFileName]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="134, 425, 739, 25" CvType="InputBox" DesignTimeRectangle="136, 429, 717, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="726b55a5-23c7-4121-b3b8-67858413850b" InformativeScreenshot="028aa8d66715f87d22ad01e522fb052e.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="673, 494, 88, 26" CvTextArea="704, 500, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="673, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" Guid="a6b330a8-5799-472c-b052-b99853b91e13" InformativeScreenshot="efcc22a97da618af56d152e397b39013.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Yes'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="211, 95, 67, 23" CvTextArea="234, 100, 20, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="211, 95, 68, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'&amp;Yes'" FullSelectorArgument="&lt;wnd aaname='Confirm Save As' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Confirm Save As' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' check:text='&amp;amp;Yes' /&gt;" Guid="305cd0ec-3f75-4da8-b9a4-ffd67029a685" InformativeScreenshot="1bef66a9b77ca19c9f6e50ac152e9b5b.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Confirm Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'History Template'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="594, 43, 83, 14" CvTextArgument="History Template" CvType="Text" DesignTimeRectangle="581, 38, 111, 24" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'History Template'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='History Template' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='History Template' role='page tab' automationid='' check:text='History Template' /&gt;" Guid="b669e10a-b45b-4464-842b-d2602fa0d93a" InformativeScreenshot="7efeff3f15cf6d651bf4837cbd6ba183.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmMain' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply to History File(s)'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="119, 16, 111, 14" CvTextArgument="Apply to History File(s)" CvType="Text" DesignTimeRectangle="118, 12, 115, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Apply to History File(s)'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='History Template' role='tool bar' /&gt;&lt;ctrl name='Apply to History File(s)' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='History Template' role='tool bar' /&gt;&lt;ctrl name='Apply to History File(s)' role='push button' automationid='' check:text='Apply to History File(s)' /&gt;" Guid="4e746922-0ca4-4dc0-b615-91ae65966a91" InformativeScreenshot="4f3bba132378f33ef6d4807ac70ba784.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='WindowsForms10.Window.*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Browse ...'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="186, 64, 69, 23" CvTextArea="195, 69, 36, 12" CvTextArgument="Browse" CvType="Button" DesignTimeRectangle="186, 64, 69, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Browse ...'" FullSelectorArgument="&lt;wnd ctrlname='groupBox2' /&gt;&lt;wnd ctrlname='btnBrowseHistoryFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox2' /&gt;&lt;wnd ctrlname='btnBrowseHistoryFiles' check:text='Browse ...' /&gt;" Guid="7f75ba0b-44c1-4ca6-969a-d282359fc256" InformativeScreenshot="5e51891f86f404186d72abe7726fe055.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varBVAHistoryTemplate]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="196, 464, 468, 26" CvType="InputBox" DesignTimeRectangle="201, 470, 440, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="128458e2-bd69-4da0-af29-990132eab10f" InformativeScreenshot="c0d5172c898707407c2895db390fd18d.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Select History Template File' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="673, 495, 88, 25" CvTextArea="701, 500, 31, 15" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="673, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="ce774d38-4c93-45ad-9bc8-0b1f90c407f4" InformativeScreenshot="af4ab2b13783b2d25f56e202ca7ffde5.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Select History Template File' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Selection Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGRawDataNodeName]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="386, 132, 198, 22" CvType="InputBox" DesignTimeRectangle="387, 133, 196, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'*'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='txtSelectionFilter' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='txtSelectionFilter' /&gt;" Guid="a1846dd5-a75e-4b62-9081-0c3e61691396" InformativeScreenshot="7b3b968cba7798a5da25754d680c56f7.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="287, 136, 73, 12" CvTextArgument="Selection Filter:" CvType="Text" DesignTimeRectangle="285, 136, 79, 13" ElementType="Text" FriendlyName="'Selection Filter'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='label2' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='label2' check:text='Selection Filter:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="589, 131, 75, 23" CvTextArea="606, 136, 38, 12" CvTextArgument="Refresh" CvType="Button" DesignTimeRectangle="589, 131, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Refresh'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='btnRefresh' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='btnRefresh' check:text='Refresh' /&gt;" Guid="01efe720-e4cd-451e-915f-552faaa2ede0" InformativeScreenshot="ef3539c61e9814a304c5495c237ed202.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '20100420JR0003'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="295, 180, 86, 12" CvTextArgument="20100420JR0001" CvType="Text" DesignTimeRectangle="295, 180, 133, 13" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'20100420JR0003'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='listUnselectedHistFiles' /&gt;&lt;ctrl name='Available Files:' role='list' /&gt;&lt;ctrl name='20100420JR0003' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='listUnselectedHistFiles' /&gt;&lt;ctrl name='Available Files:' role='list' /&gt;&lt;ctrl name='20100420JR0003' role='list item' automationid='' check:text='20100420JR0003' /&gt;" Guid="0e04ceea-bd9b-43e7-8e5d-fae0845e9ea5" InformativeScreenshot="b51ff8c60c12c1b92ab0aebce81f37ff.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add &gt;&gt;'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="437, 208, 86, 23" CvTextArea="460, 213, 36, 12" CvTextArgument="Add &gt;&gt;" CvType="Button" DesignTimeRectangle="437, 208, 86, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Add &gt;&gt;'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='btnSelectHistFile' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='btnSelectHistFile' check:text='Add &amp;gt;&amp;gt;' /&gt;" Guid="1db07aa8-5685-470a-8264-484ec0583caf" InformativeScreenshot="765726441fe66c701531306e50531389.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="515, 451, 75, 23" CvTextArea="542, 456, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="515, 451, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlname='btnOK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='btnOK' check:text='OK' /&gt;" Guid="5e1f9a00-6bb6-40f3-ae6d-f4ed72687534" InformativeScreenshot="f7ba8b38024ad49517919fcfbc073763.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Vision\Analyzer2\analyzer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAluSURBVFhHrVcLVM1ZFz/3FvfebqR3ygzpiTxKfFdKhdJ8GqxkKIrciCTPmiS9NOQxHoOZ8XktYsZgMA/z+chrSrkZE8sjjSJG/26Pe5FQyP5+596WYSmsWbPX+q3//3/+++x99j5777MPexcV+fnJVX5+HhcCA5XFo0ZtvxweripVKmvLY2JIhxkxVBI1pfJSePj5guDgLWv69FEOsbAYMM7W1gjTRXopf4MKfH0lhb6+/sUjRx4si40t06xcQQ1rVlPT6lX0fEU2UUY6UeoSoswMev5Zlm68AajNXv60NG5W+T6F4tsEJ6cxEGWol/iepPLykhX5+ARcCQ0tFBYupGdfrKcXaan0RKmk+2PHUuWwYXTT35+uA9eAUuAmxoTAQLoXEkKN8MiLlGR6unYNCXPn0NmR/z4d3a3bhA+kUhnEv90jKoVCUuTtve5mtFL9hFu2KIlqgoKotG9fKrCzazpiY1O1zdRUtd3M7FyWXH44zcjou2xj48Nbzczyc8zNi3+ytr6t6tr12XXw38Nin3+aSA0pi+lGVJRmjYtLhpuxsQ3UtL6IvF69+v3m431cDQvUE8ObTzo7V66QSM5NZewrH8ZmgcUP+BfQG3ABHIAPgC6APeAMuHVkbJAvYxNnikQbPpfJTp/r16+qavz4ZkE5lXIHKfJcpNJ+4DMA/qLTjo5WKnd3VemIwOZch+6VcRLJHmiZKWdsKH5zZbZAB0AKtAf4vnJwQeKWJ/9uB0gAY8AKi3F1Z2x8vESyvsDFpe6PgOH0nYvzaSeJxAP/+TzGTnXubHbKxmZ3jlx+NVYs3oah4UAvwAzgwl5zWSGsLmBsIOCfr4ffGcY84ClT/G7NvXxhHeH7vkoDg4z9JiZlOZaWxzBmDojZf01MemTIZAlOIlEIzOiPQUuAW/maMK6ssH27tZc9PQtvTImsuLVwQe2d9LTa8tlxNSWhY8t+7NLlaBpjmdP1W6O37nXi3jFxE4sDoG+bg1jMt4Lr0THDW6wTwJleo9MGBn6qLnY/3oqNIe2hA3Q/93+kPfw91e7ZpUPd3j2k/ekwPTh5nOpydpLK2VmLmBmPqW/IaiG+XVwf98BLHr6I1yw+CdedYCzkst+QP+s2rSPttzlU/dUGElZnk7ByObDsFSwn9Ya19PDnQ/SDo8MtV8bCIIIXoraI63pD52uUK5Esujo6+FHD/j1Uve5zEpYtBTJJyMogYWl6C9JevtdtWk9/JieQkrGtmM7da/gLLF3MmCfeudXvT0eQSpeCArQPdm4h9SpYzJVkpJKQnkJC6mISliTrgYKje6Ym073NG6nQS/Gks956njXsZ8YitxsanurOWB98tm3tq3SQsW4nHeyLHu7eQdUrPiMhDQpTFpGQ/CkJSQkkJC4gIWE+MO8lqjOW0J3kxBdz5fIDENEXkOLFOrfrh2cq05JpbceO+zHGY+zdizhkZDSrPD62UbNutV7xohalC+aSMC+ehDlxJMTPImF2rB74frB+NeV6KTQwMwEirAHxAbH442sR4fcadm6l/MGKR26MDcG4LurbpD3Yt1xXl3Ltiiy9tdzSebOhEIqQBcKMaSRMV5IwbSpVRUfpUDs3jtRJCygOHof0wRDDawc70sXuWC08U5uVTuolSRTL2C4UBF6K26adcF9xwDDScrfPn6O3lCuG0irlFKqaEkFVkRNJPSkcmKDDfSyuaPAgQsWbAxG8JIsgx/G8j3fjvZQkqoIR9ZmptMG0UzECYyD/z3W1SlsYm10xfhzVwNVVcTOpDso1MUrSwFJNVARpoVw7KYw0E8Az5mOqHTuGKkNDaKmx8VlMVwDGm5HbuySSjbVTJ1PNzOkkQM49GHO0t1sNymskeHQeapW+ZmyFJiaaqmfNoBpY/RjP3729SDXQU4eiAZ50Ed/asE+oLiiA6j8ZSwWeHo+9RKJsTO8KGEBGj6Pd7S8/hBx1VKTOexosIl8xsB4xEg8eHDFt0JeM7WuAUjUsVkeE0wO4/IRbr8fIqx04PaahTkeFiURfqPp7PKkP/oi0o4MpwdDwHMJ7JKbrCs9WqTSrYuRHpBkfStXwVNXkSVSDmLk2fChBxlKwmHC+VmkTY9vqoLgGrq6BdXVwcQViIt1Idhq/nQAzRxxUm+RG+ZoRAXShdy8KZGw1xnsCBnC/5KCVZYUacwS/Ibptqoa3NDDkvJeiCfmZDj6ejq0TPJBSqhhIV1yd6YKFOakMDelWD1fK625PgxgbBxZdV4M+K+i4ne3zLR073Ma3P2C6A6mHGJpX4t6Xbth2piLGSNW+PV2wtqIyD3c65tD9PlJxPnj5OdA6bWQstLhXT7poZUk4duk8cL1TJ7qL/U8Ui37ATL7PIlQ76WaR6FywSPQffPcA2m1nzO57Y/mvteAtkUiouGV+gYjRzT5u9I2lxR14bzJ4246BUTihcq0sH1dgEb9h8iWgBKh2cqS8Dz+4D1NjwKaL4gCkLNohbr1uT/cZGkaX9HRtFCwt6AbmXAUuchlyOd0d0J8SRaJfESS8TrR1SupItFcmPXIbbrwCK7gQLuyuTEZVHv3oS6mUpxvvF3gu80aDdz6GKLuSox2Mf68DjyAWUQXm/AHw+TftbOmysyONZmwVeHl39fZyPABtWJ61lVrt1pPK2hkSNpmqgAb7bnQDguCCVASTwzcouXv16IxCv+guAvIx9lvTws8XUW4kIwGL2iWXl0E07yl51/R2QmfZIVMs3nB7sIKqIVSAIC70kZERNQ73J5WLk+YXC/PCXDOzMy3IK3Kwr36OqH8qlVA9eOsAQSolra8PnbXvWj9CJFqpF/12978kRJXpLtNOxysjwp7V+3pTPYQ9hdAXCEga5kcUMooodMxfQLoRsuYFeBqBejMzqo8Io9KggCa0Rl+3nBFva1DeIBGKTp/dFua5alSypuip1GxqSgTh70Jzn97UhPp/NWBo03wj2UEo54HKT8j36wdeITFOFuvs9u1ziod41z5cspiacWcgd3cixAPxBZl0JLKyInJ0hGeG0rMF86k6Pq75eA/XSgTdSijHFUFXeFprUt+LxMh9W5wyYYdsrPNLfIc0anDdeszvhKtWEuGO+Dx7OT1agk5pSiRdHOBZv0gm24+Cwy8yvC3Tt97/APHgsUK99UHbnZ7E2O5ljJ0B8jIZO7EQrQRqSCIuEvxM4Dcnq5Y5/yhxS3hHwy8s/DrGo5qfARz8nY/xf5znPa1m7P+pRJheGG7kJgAAAABJRU5ErkJggg==" InformativeScreenshot="5b100aa084029291d8b051e5e023a7cd.png" Selector="&lt;wnd app='analyzer.exe' ctrlname='FrmMain' /&gt;" Title="Analyzer 2.3" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="572,4930" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="530,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;This is a non-Chalfont Scanner&quot;]" />
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Analyzer 2.3" sap:VirtualizedContainerService.HintSize="530,4717" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="bf8e555a-9263-430a-9277-01b5221d1438" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,4426" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="82, 43, 18, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="69, 38, 46, 24" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'File'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='File' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='File' role='page tab' automationid='' check:text='File' /&gt;" Guid="d9b3df9f-16e5-42ec-bb32-8e4347730506" InformativeScreenshot="7eea48e9cd91fca5f5ce1a3a6c3b55db.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmMain' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="14, 45, 23, 11" CvTextArgument="New" CvType="Text" DesignTimeRectangle="6, 5, 42, 66" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'New'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='Workspace' role='tool bar' /&gt;&lt;ctrl name='New' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='Workspace' role='tool bar' /&gt;&lt;ctrl name='New' role='push button' automationid='' check:text='New' /&gt;" Guid="c5ec5d58-d6de-4d1b-8f12-b6c38509c26d" InformativeScreenshot="cb3534838c639d4fe9bd91eef8cac99d.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='WindowsForms10.Window.*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Raw Files'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGRawFileDir]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="101, 61, 146, 21" CvType="InputBox" DesignTimeRectangle="101, 62, 145, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'D:\SJ\01-02-2024\201004…'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textRawFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textRawFiles' /&gt;" Guid="54a95564-c7ac-4ca9-bcb1-ec9d7a53261b" InformativeScreenshot="e47ec78d2ffaa46cfde4a40707f2093b.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="28, 65, 50, 12" CvTextArgument="Raw Files:" CvType="Text" DesignTimeRectangle="26, 65, 56, 13" ElementType="Text" FriendlyName="'Raw Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelRawFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelRawFiles' check:text='Raw Files:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'History Files'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGHistoryDir]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="101, 88, 147, 21" CvType="InputBox" DesignTimeRectangle="101, 88, 145, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'D:\SJ\01-02-2024\201509…'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textHistoryFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textHistoryFiles' /&gt;" Guid="6ee3ac24-c953-4e09-b031-41302e1acc8c" InformativeScreenshot="860e43490e7322165d9afa3c64104610.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="28, 91, 60, 14" CvTextArgument="History Files:" CvType="Text" DesignTimeRectangle="26, 91, 66, 13" ElementType="Text" FriendlyName="'History Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelHistoryFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelHistoryFiles' check:text='History Files:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Export Files'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGHistoryDir]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="101, 114, 146, 21" CvType="InputBox" DesignTimeRectangle="101, 114, 145, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Export Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textExportFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='textExportFiles' /&gt;" Guid="979e765f-c612-4345-83be-be55d7862094" InformativeScreenshot="7e655cbfe76ecd6373527122fc509384.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="28, 117, 58, 14" CvTextArgument="Export Files:" CvType="Text" DesignTimeRectangle="26, 117, 64, 13" ElementType="Text" FriendlyName="'Export Files'" FullSelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelExportFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupFolders' /&gt;&lt;wnd ctrlname='labelExportFiles' check:text='Export Files:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="178, 166, 73, 21" CvTextArea="204, 170, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="177, 165, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlname='buttonOK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='buttonOK' check:text='OK' /&gt;" Guid="d755f8bc-4ce0-44af-b036-403ff7ef1203" InformativeScreenshot="1316915a130ff470ac5a7f360ad7d388.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmEditWorkspaceDlg' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGProjectFileName]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="134, 425, 739, 25" CvType="InputBox" DesignTimeRectangle="136, 429, 717, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="726b55a5-23c7-4121-b3b8-67858413850b" InformativeScreenshot="028aa8d66715f87d22ad01e522fb052e.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="673, 494, 88, 26" CvTextArea="704, 500, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="673, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" Guid="a6b330a8-5799-472c-b052-b99853b91e13" InformativeScreenshot="efcc22a97da618af56d152e397b39013.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Yes'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="211, 95, 67, 23" CvTextArea="234, 100, 20, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="211, 95, 68, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'&amp;Yes'" FullSelectorArgument="&lt;wnd aaname='Confirm Save As' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Confirm Save As' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' check:text='&amp;amp;Yes' /&gt;" Guid="305cd0ec-3f75-4da8-b9a4-ffd67029a685" InformativeScreenshot="1bef66a9b77ca19c9f6e50ac152e9b5b.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Confirm Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'History Template'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="594, 43, 83, 14" CvTextArgument="History Template" CvType="Text" DesignTimeRectangle="581, 38, 111, 24" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'History Template'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='History Template' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Ribbon Tabs' role='page tab list' /&gt;&lt;ctrl name='History Template' role='page tab' automationid='' check:text='History Template' /&gt;" Guid="b669e10a-b45b-4464-842b-d2602fa0d93a" InformativeScreenshot="7efeff3f15cf6d651bf4837cbd6ba183.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmMain' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply to History File(s)'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="119, 16, 111, 14" CvTextArgument="Apply to History File(s)" CvType="Text" DesignTimeRectangle="118, 12, 115, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Apply to History File(s)'" FullSelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='History Template' role='tool bar' /&gt;&lt;ctrl name='Apply to History File(s)' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='The Ribbon' role='property page' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='History Template' role='tool bar' /&gt;&lt;ctrl name='Apply to History File(s)' role='push button' automationid='' check:text='Apply to History File(s)' /&gt;" Guid="4e746922-0ca4-4dc0-b615-91ae65966a91" InformativeScreenshot="4f3bba132378f33ef6d4807ac70ba784.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='WindowsForms10.Window.*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Browse ...'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="186, 64, 69, 23" CvTextArea="195, 69, 36, 12" CvTextArgument="Browse" CvType="Button" DesignTimeRectangle="186, 64, 69, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Browse ...'" FullSelectorArgument="&lt;wnd ctrlname='groupBox2' /&gt;&lt;wnd ctrlname='btnBrowseHistoryFiles' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox2' /&gt;&lt;wnd ctrlname='btnBrowseHistoryFiles' check:text='Browse ...' /&gt;" Guid="7f75ba0b-44c1-4ca6-969a-d282359fc256" InformativeScreenshot="5e51891f86f404186d72abe7726fe055.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[varBVAHistoryTemplate]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Recommended_Artefact_Correction_Template_AllAverage_v0.1_NR2.ehtp</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varBVAHistoryTemplate]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="196, 464, 468, 26" CvType="InputBox" DesignTimeRectangle="201, 470, 440, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="128458e2-bd69-4da0-af29-990132eab10f" InformativeScreenshot="c0d5172c898707407c2895db390fd18d.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Select History Template File' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="673, 495, 88, 25" CvTextArea="701, 500, 31, 15" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="673, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="ce774d38-4c93-45ad-9bc8-0b1f90c407f4" InformativeScreenshot="af4ab2b13783b2d25f56e202ca7ffde5.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' cls='#32770' title='Select History Template File' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[varEEGRawDataNodeName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">*20130606NR0002*</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Selection Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Text="[varEEGRawDataNodeName]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="386, 132, 198, 22" CvType="InputBox" DesignTimeRectangle="387, 133, 196, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'*'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='txtSelectionFilter' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='txtSelectionFilter' /&gt;" Guid="a1846dd5-a75e-4b62-9081-0c3e61691396" InformativeScreenshot="7b3b968cba7798a5da25754d680c56f7.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="287, 136, 73, 12" CvTextArgument="Selection Filter:" CvType="Text" DesignTimeRectangle="285, 136, 79, 13" ElementType="Text" FriendlyName="'Selection Filter'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='label2' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='label2' check:text='Selection Filter:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="589, 131, 75, 23" CvTextArea="606, 136, 38, 12" CvTextArgument="Refresh" CvType="Button" DesignTimeRectangle="589, 131, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Refresh'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='btnRefresh' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='btnRefresh' check:text='Refresh' /&gt;" Guid="01efe720-e4cd-451e-915f-552faaa2ede0" InformativeScreenshot="ef3539c61e9814a304c5495c237ed202.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '20130606NR0002'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvTextArea="295, 180, 91, 12" CvTextArgument="20130606NR0002" CvType="Text" DesignTimeRectangle="295, 180, 133, 13" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'20130606NR0002'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='listUnselectedHistFiles' /&gt;&lt;ctrl name='Available Files:' role='list' /&gt;&lt;ctrl name='20130606NR0002' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='listUnselectedHistFiles' /&gt;&lt;ctrl name='Available Files:' role='list' /&gt;&lt;ctrl name='20130606NR0002' role='list item' automationid='' check:text='20130606NR0002' /&gt;" Guid="7d1db13e-f11f-4c70-b51b-29cafaddbf91" InformativeScreenshot="f71c41536b2247f85d7a56c066628feb.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add &gt;&gt;'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="437, 208, 86, 23" CvTextArea="460, 213, 36, 12" CvTextArgument="Add &gt;&gt;" CvType="Button" DesignTimeRectangle="437, 208, 86, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Add &gt;&gt;'" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='btnSelectHistFile' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='btnSelectHistFile' check:text='Add &amp;gt;&amp;gt;' /&gt;" Guid="1db07aa8-5685-470a-8264-484ec0583caf" InformativeScreenshot="765726441fe66c701531306e50531389.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf8e555a-9263-430a-9277-01b5221d1438" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="515, 451, 75, 23" CvTextArea="542, 456, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="515, 451, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlname='btnOK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='btnOK' check:text='OK' /&gt;" Guid="5e1f9a00-6bb6-40f3-ae6d-f4ed72687534" InformativeScreenshot="f7ba8b38024ad49517919fcfbc073763.png" ScopeSelectorArgument="&lt;wnd app='analyzer.exe' ctrlname='FrmHistoryFileApply' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Vision\Analyzer2\analyzer.exe" IconBase64="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" InformativeScreenshot="5b100aa084029291d8b051e5e023a7cd.png" Selector="&lt;wnd app='analyzer.exe' ctrlname='FrmMain' /&gt;" Title="Analyzer 2.3" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
